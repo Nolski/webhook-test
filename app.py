@@ -9,5 +9,9 @@ def foo():
        print "New commit by: {}".format(data['commits'][0]['author']['name'])
        return "OK"
 
+@app.route('/',methods=['GET'])
+def foo():
+       return "OK"
+
 if __name__ == '__main__':
        app.run()
